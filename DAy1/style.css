@@ -1,0 +1,41 @@
+
+body {
+  font-family: Arial;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.section {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input, textarea, button {
+  width: 90%;
+  padding: 10px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
