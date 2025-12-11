@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Superhit Playlists — Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="logo">M</div>
+      <div class="title">
+        <h1>Superhit Playlists</h1>
+        <p class="lead">Choose a category and play tracks right here — no leaving the page.</p>
+      </div>
+    </header>
+
+    <main class="player-card">
+      <div class="controls-row">
+        <div id="categoryButtons" class="cats" aria-label="Categories"></div>
+        <div class="note">Click a track to play. Autoplay may require user interaction due to browser policies.</div>
+      </div>
+
+      <div class="layout">
+        <section class="left">
+          <div class="playlist-head">
+            <strong id="catTitle">Select a category</strong>
+            <span id="catSub" class="muted">— 25 tracks</span>
+          </div>
+
+          <div id="trackList" class="list" aria-live="polite">
+            <div class="placeholder">Pick a category to load tracks.</div>
+          </div>
+        </section>
+
+        <aside class="right player" aria-label="Player">
+          <div class="now">
+            <div id="nowThumb" class="thumb">🎵</div>
+            <div class="now-meta">
+              <div id="nowTitle" class="now-title">Nothing playing</div>
+              <div id="nowArtist" class="now-sub">Select a track</div>
+            </div>
+          </div>
+
+          <div class="iframe-wrap">
+            <iframe id="ytPlayer" src="" allow="autoplay; encrypted-media" allowfullscreen title="YouTube player"></iframe>
+          </div>
+
+          <div class="player-footer">
+            <div class="tiny">Replace placeholder IDs in <code>app.js</code> with real YouTube IDs to make it live.</div>
+            <div id="tracksCount" class="tiny">0 tracks</div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="foot">
+      Built for projects — `index.html`, `styles.css`, `app.js`.
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
