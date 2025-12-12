@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Project — Smart Campus Navigator</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <div class="logo">SCN</div>
+        <span class="brand-text">Smart Campus Navigator</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main">
+        <a href="#overview">Overview</a>
+        <a href="#modules">Modules</a>
+        <a href="#team">Team</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="overview">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Smart Campus Navigator</h1>
+          <p class="lead">A web-based system to guide students and visitors around campus using indoor maps, route planning and real-time updates.</p>
+
+          <ul class="meta">
+            <li><strong>Course:</strong> B.Tech — CSE (Sem IV)</li>
+            <li><strong>Guide:</strong> Dr. A. Sharma</li>
+            <li><strong>Status:</strong> Prototype</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#modules">See modules</a>
+            <a class="btn ghost" href="project-report.pdf" target="_blank" rel="noopener">Download report</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="mockup">
+            <div class="mockup-top">Map view</div>
+            <div class="mockup-body">
+              <div class="map-pin">You</div>
+              <div class="route">Route preview</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / ABSTRACT -->
+    <section class="container section about">
+      <h2>Abstract</h2>
+      <p>Smart Campus Navigator is designed to improve on-campus mobility by combining building floor-plans, POI (departments, labs, canteen), and shortest-path routing. It supports search-by-room, accessibility options and admin-managed updates.</p>
+    </section>
+
+    <!-- MODULES -->
+    <section class="container section" id="modules">
+      <h2>Project Modules</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Map & Floor Plans</h3>
+          <p>Upload and render multi-floor maps, toggle layers, zoom/pan and position markers.</p>
+        </article>
+
+        <article class="card">
+          <h3>Routing Engine</h3>
+          <p>Graph-based pathfinding to compute shortest/accessible routes between points.</p>
+        </article>
+
+        <article class="card">
+          <h3>Search & POI</h3>
+          <p>Search campus entities (rooms, faculty, services) with autocomplete and filtering.</p>
+        </article>
+
+        <article class="card">
+          <h3>Admin Panel</h3>
+          <p>Admins can edit maps, add POIs, and push urgent notices to users.</p>
+        </article>
+
+        <article class="card">
+          <h3>User Profiles</h3>
+          <p>Students save favorites, view history and set accessibility preferences.</p>
+        </article>
+
+        <article class="card">
+          <h3>Notifications</h3>
+          <p>Real-time alerts (events, maintenance) and scheduled notifications for routes.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="container section" id="team">
+      <h2>Team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="avatar">MS</div>
+          <h4>Mayank Sharma</h4>
+          <p class="muted">Frontend & UI</p>
+        </div>
+
+        <div class="team-card">
+          <div class="avatar">OS</div>
+          <h4>OSHOLT</h4>
+          <p class="muted">Backend & Routing</p>
+        </div>
+
+        <div class="team-card">
+          <div class="avatar">AR</div>
+          <h4>Ananya Rao</h4>
+          <p class="muted">Maps & Data</p>
+        </div>
+
+        <div class="team-card">
+          <div class="avatar">DK</div>
+          <h4>Dr. K. Verma</h4>
+          <p class="muted">Project Guide</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="container section" id="timeline">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li><strong>Week 1–2:</strong> Requirements, data collection</li>
+        <li><strong>Week 3–4:</strong> Map rendering & UI</li>
+        <li><strong>Week 5–6:</strong> Routing engine implementation</li>
+        <li><strong>Week 7:</strong> Admin panel + testing</li>
+        <li><strong>Week 8:</strong> Demo, report & final delivery</li>
+      </ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="container section contact" id="contact">
+      <h2>Contact & Demo Request</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Project Lead</h3>
+          <p><strong>OSHOLT</strong><br>osholt@example.com<br>+91 98765 43210</p>
+          <p class="muted">Available for demo and walkthroughs.</p>
+        </div>
+
+        <form class="contact-form" action="#" onsubmit="event.preventDefault(); alert('Request submitted (mock)');">
+          <label>
+            <span class="label-text">Your name</span>
+            <input type="text" name="name" placeholder="Full name" required>
+          </label>
+
+          <label>
+            <span class="label-text">Email</span>
+            <input type="email" name="email" placeholder="you@college.edu" required>
+          </label>
+
+          <label>
+            <span class="label-text">Message</span>
+            <textarea name="message" rows="4" placeholder="Short message / request" required></textarea>
+          </label>
+
+          <button class="btn primary" type="submit">Send request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <strong>Smart Campus Navigator</strong> — College Project • Built by OSHOLT & team</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#">Privacy</a>
+        <a href="#">Report</a>
+        <a href="#">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
